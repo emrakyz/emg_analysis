@@ -148,7 +148,7 @@ To organize the code, I:
 # Surprising and Expected Findings 
 - Anterior Deltoid muscles shouldn't be trained separately since almost all related exercises activate it extensively.
 - Upper Trapezius movement is required to load them substantially. But a lot of shoulder exercises significantly activate them. Even press exercises.
-- Neither for mean nor the peak activation, isolated biceps exercises can beat compound chin up and pull up exercises. This is an extremely surprising findings.
+- Neither for mean nor the peak activation, isolated biceps exercises can beat compound chin up and pull up exercises. This is an extremely surprising finding.
 - Chin Up even beats almost all exercises for some of the core muscles, though as mentioned before, we are not 100% sure if this correlates to strength or hypertrophy gains directly since it is mostly isometric.
 - A very popular back exercise Seated Rows perform worse compared to almost all exercises for almost all back muscles groups. This is probably because of the lack of stretch and range of motion during the exercise.
 - Pull ups and Chin ups had similar activations for biceps muscles.
