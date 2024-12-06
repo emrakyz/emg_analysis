@@ -14,7 +14,7 @@
 # Organization
 - EMG Analysis is a concise but expressive name for the project since EMG only means Electromyography and it is only used to assess muscular response.
 - The project consists of 4 R scripts inside the `scripts` folder, and 1 `raw_data` folder inside the `data` folder, containing raw data for each muscle group. Then the script creates the `processed` folder inside the `data` folder but that directory and its contents are removed at the end because they are not necessary as an output but only used as intermediate files.
-- The user should only run the `00_main.R` script. The subsequent scripts are run automatically. The `01_clean.R` is to clean and the `02_transform.R` is to transform and the `03_visualize.R` is to visualize the data respectively. The naming is quite expressive and intuitive. On the other hand, neither for the folder names, nor for the file names; nothing but lowercased English alphanumeric characters and underscores are used to decrease the possibility of a filesystem problem and to increase compatibility.
+- The user should only run the `00_main.R` script. The subsequent scripts are run automatically. The `01_clean.R` is to clean and the `02_transform.R` is to transform and the `03_visualize.R` is to visualize the data respectively. The naming is quite expressive and intuitive. On the other hand, either for the folder names, or for the file names; nothing but lowercased English alphanumeric characters and underscores are used to decrease the possibility of a filesystem problem and to increase compatibility.
 
 # Data Cleaning
 The main cleaning steps included:
