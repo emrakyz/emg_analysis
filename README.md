@@ -54,13 +54,13 @@ The transformation process used a modular approach with two main functions:
 The visualizations were designed to address the project's main objective: Identifying the most effective exercises for targeting specific muscles and muscle groups.
 
 Implemented a consistent visual theme using `theme_minimal()` with:
-- Light gray background for better readability. Some people use dark mode ans
-- d with the default mode in R, the image viewer can have problems regarding contrast as the background becomes black.
+- Light gray background for better readability. Some people use dark mode and with the default mode in R, the image viewer can have problems regarding contrast as the background becomes black.
 - White grid lines for subtle reference points.
 - Fixed dimensions (12x12 inches) and resolution (300 DPI).
 - Consistent color scheme for each muscle group using a predefined color palette.
 
 Two Main Plot Types:
+
 **a)** Individual Muscle Plots:
 - Bar charts showing top 20 exercises by activation level.
 - Numerical values displayed on bars for precise reference.
@@ -106,3 +106,52 @@ The visualizations help answer the project's objectives by:
 - Enabling comparison between mean and peak activation.
 - Highlighting exercises that provide balanced muscle activation.
 - Facilitating evidence based exercise selection.
+
+# Reproducibility
+Split analysis into logical steps:
+- `00_main.R`: Main orchestration script.
+- `01_clean.R`: Data cleaning and standardization.
+- `02_transform.R`: Data transformation and calculations.
+- `03_visualize.R`: Plot creation and saving.
+- Each script handles a specific aspect of the analysis pipeline and it is all automated by the main script. The user only runs the main script and is informed by the output printed by the script in a clean way.
+- The user only needs the `scripts` and the `data` folder.
+
+Implemented automatic recursive directory creation:
+- `output/figures/muscle_group/plot.png` is created automatically.
+- The script also creates the `data/processed` folder but removes it at the end.
+
+Added comprehensive error checking:
+- Verifies working directory and data existence.
+- Reports script execution times.
+- Provides clear error messages.
+- Generates execution summary with success, failure status.
+
+To organize the code, I:
+- Used consistent naming conventions.
+- Created reusable functions with clear purposes.
+- Added comments explaining complex operations.
+- Defined constants at the start of scripts.
+- Maintained consistent code formatting.
+- More abstraction could have been implemented but I didn't want to increase the complexity further for a small project like this.
+
+## How To Run:
+- Just clone the repository and run the `00_main.R` script.
+- Find the results in the output folder.
+- With few changes, more groups or more, different data can be added; if the user wants to use different data with it.
+
+# Summary
+
+- I managed to do what I planned to do exactly, as neither the dataset nor the task was particularly difficult. Though, the real aim behind this project was to exercise on the usage of R. So, I still had some difficulties even with a personal background in programming, scripting and system administration.
+- Learned how to use the R documentation, as well as several other sources with it (forums, pdf books).
+- Got a little bit familiar with R syntax even though it is surprisingly weird compared to other languages (pipes with `%>%`).
+
+# Surprising and Expected Findings 
+- Anterior Deltoid muscles shouldn't be trained separately since almost all related exercises activate it extensively.
+- Upper Trapezius movement is required to load them substantially. But a lot of shoulder exercises significantly activate them. Even press exercises.
+- Neither for mean nor the peak activation, isolated biceps exercises can not beat compound chin up and pull up exercises. This is an extremely surprising findings.
+- Chin Up even beats almost all exercises for some of the core muscles, though as mentioned before, we are not 100% sure if this correlates to strength or hypertrophy gains directly since it is mostly isometric.
+- A very popular back exercise Seated Rows perform worse compared to almost all exercises for almost all back muscles groups. This is probably because of the lack of stretch and range of motion during the exercise.
+- Pull ups and Chin ups had similar activations for biceps muscles.
+- Hip thrusts perform very well even for leg muscles other than Gluteus.
+- Squats are not mainly glute exercises.
+- A lot of other findings...
