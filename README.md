@@ -4,7 +4,7 @@
 - Information regarding muscle stimulation is also useful due to the presence of many surprising findings.
 
 # Data
-- The data had been shared by [Dr. Bret Contreras](https://bretcontreras.com/about-me/) on the popular bodybuilding forum [T-Nation](https://t-nation.com/) and it is used as a reputable source by many institutes such as the ISSA (International Sports Sciences Association) even though it has a lot of limitations because there is a lack of relevant data in the field. He named the series as: "Inside the Muscle".
+- The data had been shared by [Dr. Bret Contreras](https://bretcontreras.com/about-me/) on the popular bodybuilding forum [T-Nation](https://t-nation.com/) and it is used as a reputable source by many institutes such as the ISSA (International Sports Sciences Association) even though it has a lot of limitations because there is a lack of relevant data in the field. He named the series as: "[Inside the Muscle](https://t-nation.com/t/inside-the-muscles-best-shoulders-and-trap-exercises/284619)".
 - He performed the exercises in a 5 rep max condition, and collected the data by using electrical nodes on his body.
 - The data has "mean" and "peak" activation numbers for different exercises in a table format. It is not ordered in any way in its original form.
 - Mean activation is the mean value during the whole repetition phase while peak activation is the maximum contraction in any point of a single repetition of an exercise.
